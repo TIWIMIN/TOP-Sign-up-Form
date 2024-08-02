@@ -45,6 +45,11 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+@font-face {
+  font-family: Norse;
+  src: url(Assets/Norse-Bold.woff2);
+}
+
 html {
   width: 100vw; 
   height: 100vh;
@@ -62,8 +67,35 @@ body {
   flex: 1.5;
 }
 
+.logo {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+  top: 12rem; 
+  background-color: rgb(0, 0, 0, 0.5);
+  padding: 1rem 0rem;
+  color: white; 
+  font-family: Norse;
+  font-size: 5rem;
+}
+
+.odin {
+  display: inline; 
+  width: 8rem; 
+}
+
 .info {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
   background: rgb(247, 247, 247);
   background-size: 100vh;
-  flex: 2; 
+  flex: 3; 
+  gap: 1rem; 
+}
+
+form {
+  background: white; 
+  box-shadow: 3px 3px 3px rgb(206, 206, 206)
 }
