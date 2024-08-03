@@ -148,7 +148,7 @@ input:invalid {
   outline: solid 1px red;
 }
 
-input[type="password"]:invalid + div::after{
+input[id="password"]:invalid + div::after{
   content: "invalid password*"; 
   font-size: 0.6rem ;
   color: red; 
